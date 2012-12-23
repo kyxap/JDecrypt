@@ -1,4 +1,4 @@
-package com.kukharuk.jdecryptor.awt;
+package com.kukharuk.jdecrypter.awt;
 
 //
 public class Decryptions {

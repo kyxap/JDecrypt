@@ -1,18 +1,17 @@
-package com.kukharuk.jdecryptor.awt;
+package com.kukharuk.jdecrypter.awt;
 import java.awt.*;        // using AWT containers and components
 import java.awt.event.*;  // using AWT events and listener interfaces
 
-//tring to commit
 //1NF3Z58N3805F47 - use this code for input
 
 // An AWT GUI program inherits the top-level container java.awt.Frame
-public class JDecryptor extends Frame implements ActionListener {
+public class JDecrypter extends Frame implements ActionListener {
 	private Label lblInput;     // declare input Label
 	private Label lblOutput;    // declare output Label
 	private TextField tfInput;  // declare input TextField
 	private TextField tfOutput; // declare output TextField
 	private String code;       // input code
-	private String ver = "0.0.1"; 	//product version
+	private String ver = "0.0.2"; 	//product version
 	private Button btnDecr;   // declare component Button
 	private String aai = "AAAAAAAAAAAAAA9";
 	private String aia = "A9999999999AAAA";
@@ -25,7 +24,7 @@ public class JDecryptor extends Frame implements ActionListener {
 	Decryptions dec = new Decryptions();
 	
 	/** Constructor to setup the GUI */
-	public JDecryptor() {
+	public JDecrypter() {
 		setLayout(new FlowLayout());
 		// "this" Frame sets layout to FlowLayout, which arranges the components
 		//  from left-to-right, and flow to next row from top-to-bottom.
@@ -48,7 +47,7 @@ public class JDecryptor extends Frame implements ActionListener {
 		add(btnDecr);                  	// "this" Frame adds Button
 		btnDecr.addActionListener(this); // for event-handling
       
-		setTitle("PageStore Decoder ver " + ver);  // "this" Frame sets title
+		setTitle("PageStore Code Decoder       ver " + ver);  // "this" Frame sets title
 		setSize(600, 80);  // "this" Frame sets initial window size
 		setVisible(true);   // "this" Frame shows
 		
@@ -67,7 +66,7 @@ public class JDecryptor extends Frame implements ActionListener {
 	/** The entry main() method */
 	public static void main(String[] args) {
 		// Invoke the constructor to setup the GUI, by allocating an anonymous instance
-		new JDecryptor();
+		new JDecrypter();
 	}
 	
 	/** Event handler - Called back when user hits the enter key on the TextField */
