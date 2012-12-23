@@ -1,5 +1,5 @@
 
-
+//
 public class Decryptions {
 
 	public boolean checkString(String string) {
