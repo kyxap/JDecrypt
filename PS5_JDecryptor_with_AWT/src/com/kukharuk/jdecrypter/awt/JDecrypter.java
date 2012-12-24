@@ -11,7 +11,7 @@ public class JDecrypter extends Frame implements ActionListener {
 	private TextField tfInput;  // declare input TextField
 	private TextField tfOutput; // declare output TextField
 	private String code;       // input code
-	private String ver = "0.0.2"; 	//product version
+	private String ver = "0.0.3"; 	//product version
 	private Button btnDecr;   // declare component Button
 	private String aai = "AAAAAAAAAAAAAA9";
 	private String aia = "A9999999999AAAA";
@@ -35,7 +35,7 @@ public class JDecrypter extends Frame implements ActionListener {
 		
 		// The TextField tfInput registers "this" object (AWTAccumulator)
 		//  as an ActionEvent listener.
-		tfInput.addActionListener(this); //working witn Enter button
+		tfInput.addActionListener(this); //working with Enter button
 		lblOutput = new Label("Password ");  // allocate Label
 		add(lblOutput);               // "this" Frame adds Label
  
@@ -48,7 +48,7 @@ public class JDecrypter extends Frame implements ActionListener {
 		btnDecr.addActionListener(this); // for event-handling
       
 		setTitle("PageStore Code Decoder       ver " + ver);  // "this" Frame sets title
-		setSize(600, 80);  // "this" Frame sets initial window size
+		setSize(650, 80);  // "this" Frame sets initial window size   //650 - good for MacOS users :D
 		setVisible(true);   // "this" Frame shows
 		
 		// Allocate an anonymous instance of an anonymous inner class
