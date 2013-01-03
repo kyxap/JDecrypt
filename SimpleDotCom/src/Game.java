@@ -3,10 +3,13 @@
 //import helpers.GameHelper;
 
 import java.util.Scanner;
-
 public class Game {
-    public static void main(String[] args)
-    {
+	
+	private String pets = "Pets.com";
+	private String go = "Go2.com";
+	private String ask = "AskMe.com";
+	
+    public static void main(String[] args){
         int numOfGuesses = 0;
         GameHelper helper = new GameHelper();
         
