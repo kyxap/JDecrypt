@@ -11,16 +11,16 @@ public class JDecrypter extends Frame implements ActionListener {
 	private TextField tfInput;  // declare input TextField
 	private TextField tfOutput; // declare output TextField
 	private String code;       // input code
-	private String ver = "0.0.3"; 	//product version
+	private String ver = "0.0.4"; 	//product version
 	private Button btnDecr;   // declare component Button
 	private String aai = "AAAAAAAAAAAAAA9";
 	private String aia = "A9999999999AAAA";
 	private String iii = "5AA2AAAAAAAAAA2";
 	private String iai = "9AAAAAAAAAAAAA0";
-	private String iaa = "5AA2AAAAAAAAAA2"; //old code: 999dddkkkkkkkkkkkkkjkkkk
+	private String iaa = "999EEEKKKKKKKKK"; //old code: 999dddkkkkkkkkkkkkkjkkkk
 	private String aii = "AAA900000000000";
 	private String iia = "90000000000000A";
-	private String decrypt = ""; //1NF3Z58N3805F47
+	private String decrypt = "";
 	Decryptions dec = new Decryptions();
 	
 	/** Constructor to setup the GUI */
